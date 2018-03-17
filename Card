@@ -1,0 +1,35 @@
+package deckofcards;
+
+public class Card 
+{
+    private char suit;
+    private String value;
+    private int points;
+    
+    public Card()
+    {
+        suit = ' ';
+        value = "";
+        points = 0;
+    }
+    
+    public Card(char suits, String val, int points)
+    {
+        setSuit(suits);
+        setValue(val);
+        setPoints(points);
+    }
+    
+    public void setSuit(char s)
+    {
+        suit = s;
+    }
+    public void setValue(String val)
+    {
+        value = val;
+    }
+    public void setPoints(int pt)
+    {
+        points = pt;
+    }
+}
